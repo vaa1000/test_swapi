@@ -1,5 +1,5 @@
 import pytest
-import constants.Constants as const
+from constants.other import Other as const
 from helpers.requester import CustomRequest as cr
 
 
