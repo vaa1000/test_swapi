@@ -1,5 +1,5 @@
 from pydantic import BaseModel, validator
-from constants import Constants as const
+from constants.other import Other
 
 
 class Planet(BaseModel):
@@ -25,7 +25,7 @@ class Planet(BaseModel):
         :param diameter:
         :return:
         """
-        relative = diameter / const.DIAMETER_EARTH
+        relative = diameter / Other.DIAMETER_EARTH
         if not (0.1 < relative < 10):
             raise ValueError(f'd differs more than 10 times from the d Earth >>> {diameter} <<<')
         return diameter
