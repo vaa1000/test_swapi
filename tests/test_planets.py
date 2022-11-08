@@ -1,6 +1,6 @@
 import pytest
 from models.planet import Planet
-from constants import Constants as const
+from constants.other import Other as const
 
 
 class TestPlanets:
