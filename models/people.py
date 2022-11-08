@@ -24,8 +24,8 @@ class People(BaseModel):
         """
         Check gender - female or male
 
-        :param gender: str
-        :return: str
+        :param gender:
+        :return:
         """
         if gender not in ['female', 'male']:
             raise ValueError(f'gender - Wrong format, correct gender "female" or "male" >>> {gender} <<<')
@@ -35,8 +35,8 @@ class People(BaseModel):
     def check_mass(cls, mass: int) -> int:
         """
         Check mass people, what mass between 35 and 200
-        :param mass: int
-        :return: int
+        :param mass:
+        :return:
         """
         if not 35 < mass < 200:
             raise ValueError(f'Wrong mass, correct mass between 35 and 200 ---> {mass} <---')
