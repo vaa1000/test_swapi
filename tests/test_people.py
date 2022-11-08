@@ -2,7 +2,7 @@ import pytest
 from models.people import People
 
 
-class _1TestPeople:
+class TestPeople:
 
     @pytest.mark.parametrize('people_id,', (1, 4))
     def test_people(self, get_people):
