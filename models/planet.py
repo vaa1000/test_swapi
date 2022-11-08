@@ -22,8 +22,8 @@ class Planet(BaseModel):
     def ckeck_diameter(cls, diameter: int) ->str:
         """
         Checking the diameter of the planet relative to the diameter of the Earth
-        :param diameter: int
-        :return: int
+        :param diameter:
+        :return:
         """
         relative = diameter / const.DIAMETER_EARTH
         if not (0.1 < relative < 10):
